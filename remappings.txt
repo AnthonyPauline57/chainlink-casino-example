@@ -2,3 +2,5 @@ chainlink/=lib/chainlink/
 ds-test/=lib/forge-std/lib/ds-test/src/
 erc4626-tests/=lib/chainlink/contracts/foundry-lib/openzeppelin-contracts/lib/erc4626-tests/
 forge-std/=lib/forge-std/src/
+
+forge verify-contract --chain-id 11155111 --constructor-args $(cast abi-encode "constructor(address,address,address,address,uint64,bytes32,uint256)" 0xb28916d68AcABe1C2a81e3161F5b1EFBEd28926F 0xeC8635f35e356D77C44bd5b476d666F2639EfafA 0xb28916d68AcABe1C2a81e3161F5b1EFBEd28926F 0x8103b0a8a00be2ddc778e6e7eaa21791cd364625 2409 0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c 5) 0x8a0206db3a1d2fef0f539b94a4cf0b48d541b2d3 src/Casino.sol:Casino
